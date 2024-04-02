@@ -1,0 +1,135 @@
+*{
+    font-family: Cambria;
+    margin: 0;
+}
+
+body{
+    background: #000;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#wrapper{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#layer_1{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#layer_2{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+#wrapper-top{
+    height: 30%;
+    width: 100%;
+    background:#ffb56b ;
+    position: relative;
+    background-image: url("assets/forest.svg");
+    background-position: left bottom;
+}
+
+#forest{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+#wrapper-bottom{
+    height: 70%;
+    width: 100%;
+    background: #231b59;
+    display: flex;
+
+}
+
+
+
+#wrapper-smoke-one{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 20%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+#title{
+    color:#231b59;
+    font-size: 80px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffb56b;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    z-index: 3;
+}
+
+
+#wrapper-smoke-two{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 40%;
+    z-index: 0;
+}
+
+.text_stacks{
+    color: #ffb56b;
+    font-size: 25px;
+    position: relative;
+    left: 30%;
+    top: 60%;
+}
+
+#wrapper-click-one{
+    width: 100%;
+    height: 30%;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    pointer-events: auto;
+}
+
+/*
+#wrapper-click-one:hover{
+}
+
+#wrapper-click-one:active{
+}
+*/
+
+#wrapper-click-two{
+    width: 100%;
+    height: 30%;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    pointer-events: auto;
+}
+
+.wrapper-map{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+#heat-map{
+    display: initial;
+}
+
+#dot-map{
+    display: none;
+}
+
