@@ -4,8 +4,8 @@
 }
 
 body{
-    background: #000;
-    overflow: hidden;
+    background-color:#231b59;
+   
     height: 100vh;
 }
 
@@ -15,6 +15,8 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: auto;
+    overflow: auto;
 }
 
 #layer_1{
@@ -31,12 +33,13 @@ body{
 
 
 #wrapper-top{
-    height: 30%;
-    width: 100%;
+    height: 300px;
+   
     background:#ffb56b ;
+    background-size: 850px;
     position: relative;
     background-image: url("assets/forest.svg");
-    background-position: left bottom;
+    background-position: left top;
 }
 
 #forest{
@@ -46,10 +49,11 @@ body{
     width: 100%;
 }
 #wrapper-bottom{
-    height: 70%;
+    height: 830px;
     width: 100%;
     background: #231b59;
     display: flex;
+    
 
 }
 
@@ -57,31 +61,35 @@ body{
 
 #wrapper-smoke-one{
     position: absolute;
-    width: 25%;
-    height: 100%;
-    left: 20%;
+    width: 400px;
+    height: 600px;
+    right: 50%;
+    margin-right: 100px;
+    bottom: 0px;
     z-index: 1;
     pointer-events: none;
 }
 
 
 #title{
-    color:#231b59;
+    color: whitesmoke;
     font-size: 80px;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #ffb56b;
-    position: absolute;
-    left: 30%;
-    top: 15%;
+    -webkit-text-stroke-color: #231b59;
+    position: relative;
+    text-align: center;
     z-index: 3;
+    
 }
 
 
 #wrapper-smoke-two{
     position: absolute;
-    width: 25%;
-    height: 100%;
-    left: 40%;
+    width: 400px;
+    height: 600px;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 0px;
     z-index: 0;
 }
 
@@ -90,7 +98,7 @@ body{
     font-size: 25px;
     position: relative;
     left: 30%;
-    top: 60%;
+    top: 75%;
 }
 
 #wrapper-click-one{
@@ -120,8 +128,8 @@ body{
 }
 
 .wrapper-map{
-    width: 60%;
-    height: 100%;
+    width: 1000px;
+    height: 827 px;
     margin: auto;
 }
 
@@ -132,4 +140,3 @@ body{
 #dot-map{
     display: none;
 }
-
